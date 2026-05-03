@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your grid background */
+.grid-bg {
+  background-image: 
+    /* GRID LINES */
+    linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px),
+
+    /* GRADIENT BASE */
+    linear-gradient(to bottom, #eae9fb 0%, #f8f7fe 100%);
+
+  background-size: 
+    40px 40px,  /* vertical grid */
+    40px 40px,  /* horizontal grid */
+    100% 100%;  /* gradient full */
+
+  background-repeat: repeat, repeat, no-repeat;
+}
+
+/* FLOAT + SWING COMBINED */
+@keyframes swingFloat {
+  0% {
+    transform: translateY(0px) rotate(-3deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-2deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-3deg);
+  }
+}
+
+/* WRAPPER (string effect anchor) */
+.tag-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* BASE TAG */
+.tag {
+  transform-origin: top center;
+  animation: swingFloat 4s ease-in-out infinite;
+}
+
+/* VARIATIONS (VERY IMPORTANT for realism) */
+.tag-1 {
+  animation-delay: 0s;
+}
+
+.tag-2 {
+  animation-delay: 0.4s;
+}
+
+.tag-3 {
+  animation-delay: 0.8s;
+}
+.tag:hover {
+  animation-play-state: paused;
+  transform: scale(1.05);
+}
+.tag-1 { transform: rotate(-3deg); }
+.tag-2 { transform: rotate(2deg); }
+.tag-3 { transform: rotate(-2deg); }
