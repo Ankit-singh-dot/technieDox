@@ -21,7 +21,7 @@
       <UseCaseCard
         label="Open Source Teams"
         title="Ship docs as fast as you ship code"
-        description="Democratize contributions with micro-tasks..."
+        description="Democratize contributions with micro-tasks, voice input, and mentorship matching. Keep your community engaged with gamification that makes documentation feel like progress, not chores."
         :points="[
           '78% less burden on maintainers',
           'Non-technical contributors via micro-tasks',
@@ -35,7 +35,7 @@
       <UseCaseCard
         label="Engineering Enablement"
         title="Onboard developers 2.3x faster"
-        description="Connect your CI/CD pipeline..."
+        description="Connect your CI/CD pipeline to TechniDox and auto-generate docs on every merge. Quality gates catch regressions before they reach production. Developers self-serve answers instead of interrupting colleagues."
         :points="[
           'CI/CD quality gates prevent doc regressions',
           'Auto-generated docs on every merge',
@@ -49,7 +49,7 @@
       <UseCaseCard
         label="Platform Teams"
         title="Documentation that scales with your APIs"
-        description="Generate API reference docs..."
+        description="Generate API reference docs, SDK guides, and integration playbooks automatically from your codebase. Keep them in sync with confidence scoring that flags drift before your customers notice."
         :points="[
           'Auto-synced API reference',
           'Multi-format export',
@@ -63,7 +63,7 @@
       <UseCaseCard
         label="Enterprise Documentation" 
         title="Documentation your auditors will approve"
-        description="Meet ISO, SOC2..."
+        description="Meet ISO, SOC2, and internal compliance requirements with automated audit trails, version control, and executive dashboards. Show documentation ROI to the C-suite with numbers that matter."
         :points="[
           'ISO 27001 & SOC2 compliance',
           'Full audit trail',

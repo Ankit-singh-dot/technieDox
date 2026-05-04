@@ -32,7 +32,7 @@
           <h3 class="text-lg">AI Documentation Generator</h3>
 
           <p class="mt-2 text-sm text-[#868585]">
-            Automatically converts codebases into comprehensive documentation...
+            Automatically converts codebases into comprehensive documentation with parameter extraction, usage examples, and multi-format export. Reduce documentation time from hours to minutes.
           </p>
 
           <ul class="mt-4 space-y-2 text-sm text-[#868585]">
@@ -53,7 +53,7 @@
           <h3 class="text-lg">Documentation Quality Scorer</h3>
 
           <p class="mt-2 text-sm text-gray-600">
-            Advanced scoring system analyzing readability...
+            Advanced scoring system analyzing readability, inclusivity, structure, and technical accuracy with actionable improvement recommendations and real-time quality assessment.
           </p>
 
           <ul class="mt-4 space-y-2 text-sm text-[#868585]">
@@ -74,7 +74,7 @@
           <h3 class="text-lg">Human-in-the-Loop Review</h3>
 
           <p class="mt-2 text-sm text-gray-600">
-            Sophisticated workflow where low-confidence content...
+            Sophisticated workflow where low-confidence content automatically routes to expert reviewers. Build trust with AI-human collaboration and community validation.
           </p>
 
           <ul class="mt-4 space-y-2 text-sm text-[#868585]">
