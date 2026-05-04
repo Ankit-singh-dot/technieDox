@@ -1,14 +1,16 @@
 <script setup>
 import { useRoute } from "vue-router";
+import { ref } from "vue";
 
 const route = useRoute();
+const isOpen = ref(false);
 </script>
 <template>
   <nav
     :class="[
       'w-full absolute top-0 left-0 z-50 transition-all duration-300',
       route.path === '/'
-        ? 'bg-transparent text-white' // HOME
+        ? 'bg-transparent ' // HOME
         : 'bg-white text-black shadow', // OTHER PAGES
     ]"
   >
@@ -53,8 +55,23 @@ const route = useRoute();
           Pricing
         </NuxtLink>
       </div>
+      <button @click="isOpen = !isOpen" class="md:hidden text-2xl">☰</button>
+      <div
+        v-if="isOpen"
+        class="md:hidden absolute top-20 left-0 w-full bg-white shadow-lg px-6 py-6 flex flex-col gap-5 z-40"
+      >
+        <NuxtLink to="/" @click="isOpen = false">Home</NuxtLink>
+        <NuxtLink to="/about" @click="isOpen = false">About Us</NuxtLink>
+        <NuxtLink to="/docs" @click="isOpen = false">Docs</NuxtLink>
+        <NuxtLink to="/pricing" @click="isOpen = false">Pricing</NuxtLink>
 
-      <button class="bg-purple-700 text-white px-5 py-2 rounded-lg">
+        <button class="bg-purple-700 text-white px-5 py-2 rounded-lg mt-2">
+          Get Started
+        </button>
+      </div>
+      <button
+        class="bg-purple-700 text-white px-5 py-2 rounded-lg hidden md:inline-block"
+      >
         Get Started
       </button>
     </div>
