@@ -3,7 +3,7 @@
   <section class="grid-bg w-full min-h-[100vh] flex items-center">
     <Navbar />
     <div class="max-w-4xl mx-auto text-center px-4">
-      <div class="absolute left-1 top-48">
+      <div class="absolute left-1 top-48 hidden md:inline-block">
         <!-- BACK CARD -->
         <img
           src="/floating_card2.png"
@@ -17,7 +17,7 @@
         />
       </div>
 
-      <div class="absolute right-5 top-48">
+      <div class="absolute right-5 top-48 hidden md:inline-block">
         <!-- BACK CARD -->
         <img
           src="/floating_card4.png"
