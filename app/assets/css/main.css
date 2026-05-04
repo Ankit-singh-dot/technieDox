@@ -2,25 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Your grid background */
+
 .grid-bg {
   background-image: 
-    /* GRID LINES */
+
     linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px),
 
-    /* GRADIENT BASE */
+
     linear-gradient(to bottom, #eae9fb 0%, #f8f7fe 100%);
 
   background-size: 
-    40px 40px,  /* vertical grid */
-    40px 40px,  /* horizontal grid */
-    100% 100%;  /* gradient full */
+    40px 40px,  
+    40px 40px,  
+    100% 100%;  
 
   background-repeat: repeat, repeat, no-repeat;
 }
 
-/* FLOAT + SWING COMBINED */
+
 @keyframes swingFloat {
   0% {
     transform: translateY(0px) rotate(-3deg);
@@ -52,7 +52,7 @@
   animation: swingFloat 4s ease-in-out infinite;
 }
 
-/* VARIATIONS (VERY IMPORTANT for realism) */
+
 .tag-1 {
   animation-delay: 0s;
 }
@@ -71,3 +71,13 @@
 .tag-1 { transform: rotate(-3deg); }
 .tag-2 { transform: rotate(2deg); }
 .tag-3 { transform: rotate(-2deg); }
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
